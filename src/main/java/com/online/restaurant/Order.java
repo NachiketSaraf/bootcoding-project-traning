@@ -9,7 +9,7 @@ public class Order {
     private Vendor vendor;
     private Customer customer;
     private String deliveryAddres;
-    private List<OrderMenuItem1>menuItems;
+    private List<OrderMenuItem>menuItems;
     private Date  orderDate;
     private String orderstatus;
 
@@ -53,11 +53,11 @@ public class Order {
         this.deliveryAddres = deliveryAddres;
     }
 
-    public List<OrderMenuItem1> getMenuItems() {
+    public List<OrderMenuItem> getMenuItems() {
         return menuItems;
     }
 
-    public void setMenuItems(List<OrderMenuItem1> menuItems) {
+    public void setMenuItems(List<OrderMenuItem> menuItems) {
         this.menuItems = menuItems;
     }
 

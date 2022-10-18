@@ -1,6 +1,6 @@
 package com.online.restaurant;
 
-public class OrderMenuItem1 {
+public class OrderMenuItem {
     private String menuitem;
     private int quantity;
     private  double price;
@@ -28,4 +28,4 @@ public class OrderMenuItem1 {
     public void setPrice(double price) {
         this.price = price;
     }
-}}
+}
