@@ -29,7 +29,7 @@ public class OrderDAO {public static final String TABLE_NAME="app_order";
                     + "CONSTRAINT app_order_pk PRIMARY KEY(ID))";
             System.out.println("Create Table Query:"+query);
             stmt.executeUpdate(query);
-
+con.close();
         }catch (Exception ex){
             ex.printStackTrace();
         }

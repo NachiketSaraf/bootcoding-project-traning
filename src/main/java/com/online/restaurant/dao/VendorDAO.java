@@ -36,7 +36,7 @@ public class VendorDAO {
             System.out.println("Address = "+rs.getString("address"));
             System.out.println(" City= "+rs.getString("city"));
             System.out.println(" State = "+rs.getString("state"));
-
+con.close();
         }
     }catch (Exception ex){
         ex.printStackTrace();

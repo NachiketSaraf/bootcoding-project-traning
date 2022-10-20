@@ -29,8 +29,9 @@ public class MenuItemDAO {
                     + "CONSTRAINT app_menu_item_pk PRIMARY KEY(ID))";
             System.out.println("Create Table Query:" + query);
             stmt.executeUpdate(query);
-
-        } catch (Exception ex) {
+con.close();
+        }
+        catch (Exception ex) {
             ex.printStackTrace();
         }
     }
