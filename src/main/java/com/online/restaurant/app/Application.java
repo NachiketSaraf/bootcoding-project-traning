@@ -6,6 +6,7 @@ import com.online.restaurant.Vendor;
 import com.online.restaurant.dao.CustomerDAO;
 import com.online.restaurant.dao.MenuItemDAO;
 import com.online.restaurant.dao.OrderDAO;
+import com.online.restaurant.service.CustomerService;
 //import com.online.restaurant.dao.OrderMenuItem1DAO;
 //import com.online.restaurant.dao.VendorDAO;
 
@@ -71,5 +72,9 @@ public class Application {
 
         MenuItemDAO menuItemDAO = new MenuItemDAO();
         menuItemDAO.createTable();
+
+        CustomerService cs = new CustomerService();
+        cs.createDummyCustomers();
+
     }
 }

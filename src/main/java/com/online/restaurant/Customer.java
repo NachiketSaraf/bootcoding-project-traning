@@ -2,8 +2,18 @@ package com.online.restaurant;
 
 public class Customer {
     // to declare a variale
+    private long customerid;
     private String name;//instance variavle
     private String address;//instance variavle
+
+    public long getCustomerid() {
+        return customerid;
+    }
+
+    public void setCustomerid(long customerid) {
+        this.customerid = customerid;
+    }
+
     private String city;//instance variavle
     private long phoneNumber;//instance variavle
 
